@@ -1,5 +1,7 @@
 # Code Explanation
 
+This code sets up a simple SSH server using the Paramiko library. It listens on port 2222 for incoming connections and, for each connection, spawns a new thread to handle the SSH communication. The authentication logic is minimal, printing the provided username and password for demonstration purposes and always returning paramiko.AUTH_FAILED.
+
 1. Import necessary modules:
 
 ```python
